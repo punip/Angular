@@ -1,0 +1,46 @@
+<div [formGroup]="formGroup">
+
+    <input type="text"
+        name="title" placeholder="Enter the title" formControlName="title"> 
+       <div>
+        <div *ngIf="title?.errors?.['bookTitleForbidden']" class="error">You cannot use this word!!!!</div>
+       </div>
+        
+            <!-- <div *ngIf="title?.invalid && (title?.dirty || title?.touched)"
+                class="error">Book title is needed 
+      
+              <div *ngIf="title?.errors?.['required']">
+                  Book title must be min 20 chars
+                </div> -->
+      
+          <div> <br>
+        <input type="number"
+        name="price"
+        placeholder="Enter the price" formControlName="price">
+        </div>
+
+        <div><br>
+        <input type="number"
+        name="pages"
+        placeholder="Enter the pages" formControlName="pages">
+        </div>
+
+        <div formArrayName="authors"><br>
+          Authors <button (click)="onAddAuthor()">Add author</button>
+          
+          <div *ngFor="let author of authors.controls; let i =index;">
+          <div [formGroupName]="i">
+          <input type="text" placeholder="author name" formControlName="name">
+          <input type="text" placeholder="gender" formControlName="gender">
+          <button (click)="onRemove(i)">Remove</button>
+        </div>
+        </div>
+      </div>
+
+
+
+        <div class="row"><br>
+        <button (click)="onSave()">save</button>
+        <button>cancel</button> 
+        </div>
+        

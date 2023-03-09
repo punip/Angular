@@ -1,0 +1,18 @@
+<!-- <p>todos-form works!</p> -->
+
+<!-- <p>todos-form works!</p> -->
+
+<div class="subContainer">
+    <div class="input">
+        <input 
+            type="text"
+            placeholder="Enter Task"
+            name="newTodos"
+            class="t-newTodos"
+            [(ngModel)]="newTodos"
+        />
+    </div>
+    <div class="t-save">
+        <button (click)="saveTodos()" [disabled]="!newTodos" >Save</button>
+    </div>
+</div>

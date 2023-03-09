@@ -1,0 +1,31 @@
+<div class="books-container" >
+    <table>
+        <thead>
+            <tr>
+                <td>Id</td>
+                <td>Title</td>
+                <td>Price</td>
+                <td>Pages</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr  *ngFor="let book of books">
+                <td>{{book._id}}</td>
+                <td>{{book.title}}</td>
+                <td>{{book.price}}</td>
+                <td>{{book.pages}}</td>
+                <td>
+                    <a routerLink="/library/book-details/{{book._id}}">Details</a>
+                </td>
+            </tr>
+            <!-- <td>2</td>
+            <td>Book 2</td>
+            <td>500</td>
+            <td>1000</td> -->
+            <!-- <td>
+                <a routerLink="/library/book-details">Details</a>
+            </td> -->
+        </tbody>
+    </table>
+
+</div>

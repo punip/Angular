@@ -1,0 +1,48 @@
+<!-- <p>calc-form works!</p> -->
+
+<div id="subOneContainer">
+    <div id="firstContainer">
+        <div id="firstNo">
+            <input 
+                type="text"
+                placeholder="Enter 1st No"
+                name = 'firstNo'
+                [(ngModel)] = "firstNo"
+                class="t-firstNo"
+
+            />
+        </div>
+        <div id="operations">
+            <select name="operat" [(ngModel)]="operatation" class="t-operations">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+            </select>
+        </div>
+        <div id="secondNo">
+            <input 
+                type="text"
+                placeholder="Enter 2nd No"
+                name="secondNo"
+                [(ngModel)]="secondNo"
+                class="t-secondNo"
+            />
+        </div>
+    </div>
+    <div id="secondContainer">
+        <div id="calculate" class="t-calculate">
+            <button (click)="cal()">Calculate</button>
+        </div>
+    </div>
+    <div id="thirdContainer">
+        <div id="ans" class="t-ans">
+            <input 
+                type=""
+                placeholder="Answer Generated Here"
+                name="calculate"
+                [(ngModel)]="ans"
+                readonly
+            />
+        </div>
+    </div>
+</div>

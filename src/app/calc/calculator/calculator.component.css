@@ -1,0 +1,61 @@
+
+
+.container{
+    text-align: center;
+    /* border: 1px solid black; */
+    /* background: #000; */
+}
+
+#subOneContainer{
+    border: 2px solid black;
+    width: 50%;
+    height: 100px;
+    margin-left: 25%;
+    /* justify-content: center; */
+}
+#subTwoContainer{
+    border: 2px solid black;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10px;
+}
+
+#firstContainer{
+    display: flex;
+    justify-content: center;
+}
+
+#firstNo{
+    margin: 5px;
+}
+
+#operations{
+    margin: 5px;
+}
+
+#secondNo{
+    margin: 5px;
+}
+
+#secondContainer{
+    display: flex;
+    justify-content: center;
+}
+
+#calculate{
+    margin: 5px;
+}
+
+#thirdContainer{
+    display: flex;
+    justify-content: center;
+}
+
+#ans{
+    margin: 5px;
+}
+
+#fourthContainer{
+    text-align: center;
+    justify-content: center;
+}

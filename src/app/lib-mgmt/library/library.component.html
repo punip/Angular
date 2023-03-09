@@ -1,0 +1,18 @@
+<div *ngIf="errorService.errorMessage" class="error">Error</div>
+<div class="library-container">
+    <h1>Library Management application</h1>
+    
+
+    <button *ngIf="!isAddNewBookVisible; else bookForm" (click)="onToggleBookForm()">Add new book</button>
+    
+    <ng-template #bookForm>
+        <!-- <app-book-form (cancel)="onToggleBookForm()">
+        </app-book-form> -->
+        <app-book-form-reactive>    
+        </app-book-form-reactive>
+    </ng-template>
+
+    <!-- <h2>Error</h2> -->
+
+    <router-outlet></router-outlet>
+</div>

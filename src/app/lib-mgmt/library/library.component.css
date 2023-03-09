@@ -1,0 +1,14 @@
+.error{
+    background-color: red;
+    color: black;
+
+    border-radius: 20px;
+
+    width: 750px;
+
+    margin: auto;
+}
+.row
+{
+    margin-top: 10px;
+}

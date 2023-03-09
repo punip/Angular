@@ -1,0 +1,22 @@
+.app-container{
+    text-align: center;
+}
+
+.app-container > .header > .nav-menu{
+    margin: 20px;
+}
+
+.app-container > .footer{
+    position: absolute;
+    bottom: 0;
+}
+
+a{
+    margin: 10px;
+    text-decoration: none;
+    border: 1px solid lightblue;
+}
+
+/* .app-container{
+    border: 1px solid black;
+} */

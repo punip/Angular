@@ -1,0 +1,27 @@
+<div>
+        <input type="text"
+        name="title"
+        placeholder="Enter the title"
+        [(ngModel)]="title">
+        
+
+        <div> <br>
+        <input type="text"
+        name="price"
+        placeholder="Enter the price"
+        [(ngModel)]="price">
+        </div>
+
+        <div><br>
+        <input type="text"
+        name="pages"
+        placeholder="Enter the pages"
+        [(ngModel)]="pages">
+
+        </div>
+
+        <div class="row">
+        <button (click)="onSave()">save</button>
+        <button (click)="onCancel()">cancel</button> 
+        </div>
+        
